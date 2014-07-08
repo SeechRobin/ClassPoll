@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass name="com.capestone.classpoll.BlobDetection"
+        x="68" y="308"/>
+    <CommunicationClass name="com.capestone.classpoll.ConvolutionMatrix"
+        x="263" y="73"/>
+    <CommunicationClass name="com.capestone.classpoll.CannyEdgeDetector"
+        x="57" y="75">
+        <Communication destinationClassName="com.capestone.classpoll.ConvolutionMatrix"/>
+    </CommunicationClass>
+    <CommunicationClass name="com.capestone.classpoll.MainActivity"
+        x="75" y="190">
+        <Communication destinationClassName="com.capestone.classpoll.BlobDetection"/>
+        <Communication destinationClassName="com.capestone.classpoll.CannyEdgeDetector"/>
+    </CommunicationClass>
+</ClassDiagram>
